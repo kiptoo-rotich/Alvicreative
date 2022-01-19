@@ -1,0 +1,105 @@
+ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: max-content;
+    width: 300px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 300;
+}
+
+#nav>ul>li {
+    margin-right: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.landing {
+    background-image: url(../images/Land2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.welcome-text {
+    padding: 10% 0% 10% 0%;
+    color: rgb(0, 30, 255);
+}
+
+.slogan {
+    width: 50%;
+    margin-top: -15%;
+    margin-left: 25%;
+    float: left;
+}
+
+#slogan1 {
+    float: right;
+    width: 38%;
+}
+
+.slogan>h3 {
+    background-color: white;
+    position: relative;
+    padding: 4%;
+    box-shadow: 0px 0px 1px 1px green;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.w1 {
+    fill: #22833e;
+    opacity: 0.4;
+}
+
+.w2 {
+    fill: #22833e;
+    opacity: 0.7;
+}
+
+.w3 {
+    fill: #22833e;
+}
+
+.footer {
+    float: left;
+    margin-bottom: -17%;
+}
+
+.layered-wave {
+    float: none;
+}
+
+h2 {
+    position: relative;
+    line-height: 1.2em;
+}
+
+h2:before {
+    position: absolute;
+    left: 47%;
+    top: 1.2em;
+    height: 0;
+    width: 50px;
+    content: '';
+    border-top: 2px solid green;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: black;
+    width: 30%;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+#history {
+    font-family: 'Roboto Slab', serif;
+}
