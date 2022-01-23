@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .forms import RequestForm
+
 def home(request):
-    return render(request,'main/index.html')
+    form = "Wei"
+    return render(request,'main/index.html',{'form':form})

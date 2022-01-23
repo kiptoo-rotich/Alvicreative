@@ -1,50 +1,25 @@
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({ loop: true })
+    .add({
+        targets: '.ml9 .letter',
+        scale: [0, 1],
+        duration: 1500,
+        elasticity: 600,
+        delay: (el, i) => 45 * (i + 1)
+    }).add({
+        targets: '.ml9',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+
+
 $(document).ready(function() {
-    $("#history").hide()
-    $("#who_we_are").mouseover(function() {
-        $("#history").show()
-        $("#who_we_are,.centered").hide()
-    });
-
-    $("#who_we_are").mouseout(function() {
-        $("#history").hide()
-        $("#who_we_are,.centered").show()
-    });
+    $('.carousel').carousel({
+        interval: 2000
+    })
 });
-
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-70px";
-    }
-    prevScrollpos = currentScrollPos;
-}
-
-
-// First hide them all
-$("#fades div").hide();
-
-function fades($div, cb) {
-    $div.fadeIn(100, function() {
-        $div.fadeOut(100, function() {
-            var $next = $div.next();
-            if ($next.length > 0) {
-                fades($next, cb);
-            } else {
-                // The last element has faded away, call the callback
-                cb();
-            }
-        });
-    });
-}
-
-function startFading($firstDiv) {
-    fades($firstDiv, function() {
-        startFading($firstDiv);
-    });
-}
-
-startFading($("#fades div:first-child"));

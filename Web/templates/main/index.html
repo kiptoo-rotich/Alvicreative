@@ -1,28 +1,58 @@
 {%extends 'base.html'%} {% load bootstrap4 %} {% load static %} {%block content%}
-<div class="landing">
-    <h1 class="text-center welcome-text">Home | Welcome</h1>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-xm-12 col-sm-12 col-md-12 col-lg-12" id="slogan">
-            <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fforbesbooksauthors%2Ffiles%2F2019%2F08%2Fbigstock-183651688.jpg" alt="Success" width="40%">
-            <img id="slogan1" src="https://business.wisc.edu/wp-content/uploads/2019/01/triumph-490x327-1.jpg" alt="Success1">
-            <div class="slogan w3-container w3-center w3-animate-top">
-                <h3>YOUR SUCCESS IS OUR PRIORITY</h3>
+<div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="ml9">
+                        <span class="text-wrapper">
+                          <span class="letters">Welcome to Alvicreative Marketing Hub</span>
+                        </span>
+                    </h1>
+                </div>
+                <img class="d-block w-100" src="../../static/images/Web-Design-And-Development-.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="ml9">
+                        <span class="text-wrapper">
+                          <span class="letters">Welcome to Alvicreative Marketing Hub</span>
+                        </span>
+                    </h1>
+                </div>
+                <img class="d-block w-100" src="../../static/images/Land2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="ml9">
+                        <span class="text-wrapper">
+                          <span class="letters">Welcome to Alvicreative Marketing Hub</span>
+                        </span>
+                    </h1>
+                </div>
+                <img class="d-block w-100" src="../../static/images/who-we-are2.jpg" alt="Third slide">
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <h2 class="text-center">Who we are</h2>
-    <div class="row">
-        <div class=" col-sm-8 col-md-2 col-lg-2"></div>
-        <div class="col-xm-12 col-sm-8 col-md-8 col-lg-8 text-center">
-            <img src="../../static/images/who-we-are2.jpg" alt="Who we are" width="100%" id="who_we_are">
-            <h3 class="centered">Ideal services for your business</h3>
-            <p id="history">Alvicreative Innovation Centre is a marketing company that was founded in 2021.This was after realizing a cap in the market where most businesses both small and medium enterprises were really struggling to grow and get to as many people as
-                possible. Our main focus was to help this entities to utilize the online space by making sure they are educated and takind advantage of the same. Successful brands move people at the moments thst matter.Thats precisely why its critical
-                to partner with a marketing company that has expertise to craft a brand strategy ,develop a compelling brand story and then deploy your messageto targeted markets through online space and smartest media available.</p>
-        </div>
-        <div class=" col-sm-8 col-md-2 col-lg-2"></div>
+    <div class="welcome_message container">
+        <h3>Who we are.</h3>
+        <p>Alvicreative Innovation Centre is a marketing company that was founded in 2021.This was after realizing a cap in the market where most businesses both small and medi- um enterprises were really struggling to grow and get to as many people as possible.
+            Our main focus was to help this entities to utilize the online space by making sure they are educated and takind advantage of the same. Successful brands move people at the moments thst matter.Thats precisely why its critical to partner with
+            a marketing company that has expertise to craft a brand strategy ,develop a compelling brand story and then de- ploy your messageto targeted markets through online space and smartest media available.</p>
     </div>
 </div>
-{%endblock%}
+
+</div> {%endblock%}
