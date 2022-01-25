@@ -166,10 +166,15 @@
     .card:hover {
         transform: scale(1.05);
         z-index: 1;
+        box-shadow: 0px 0px 5px 3px lightgray;
     }
     
     .card {
         margin: 3%;
+    }
+    
+    .card-body>h5 {
+        color: green;
     }
     
     @media (min-width: 992px) {
