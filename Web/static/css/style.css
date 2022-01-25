@@ -121,7 +121,7 @@
     .ml9 {
         position: relative;
         font-weight: 200;
-        font-size: 5em;
+        font-size: 3em;
     }
     
     .ml9 .text-wrapper {
@@ -145,7 +145,7 @@
     }
     
     .text-wrapper>.letters {
-        color: green;
+        color: white;
         float: left;
     }
     
@@ -161,6 +161,15 @@
     
     .w3 {
         fill: #0B5B41;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+        z-index: 1;
+    }
+    
+    .card {
+        margin: 3%;
     }
     
     @media (min-width: 992px) {
