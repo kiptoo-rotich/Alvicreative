@@ -23,13 +23,13 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><img src="../static/images/logo.png" alt="Logo" width="60px"></li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"> Home</a>
+                    <a class="nav-link" href="{%url 'Home'%}"> Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Services </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="">Starter Package</a></li>
-                        <li><a class="dropdown-item" href="">Website Development/Designs and maintainance</a></li>
+                        <li><a class="dropdown-item" href="{%url 'web_development'%}">Website Development/Designs and maintainance</a></li>
                         <li><a class="dropdown-item" href="">Social Media Management</a></li>
                         <li><a class="dropdown-item" href="">Video Creation and Editing</a></li>
                         <li><a class="dropdown-item" href="">Photography</a></li>
@@ -69,7 +69,7 @@
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="#">Our Approach</a>
+                            <a class="dropdown-item" href="{%url 'Approach'%}">Our Approach</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#">Founder</a>
