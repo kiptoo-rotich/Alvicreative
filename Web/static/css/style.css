@@ -184,7 +184,7 @@ ul>li {
 .charges>sup,
 .charges>sub {
     color: green;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .packages-title1 {
@@ -274,9 +274,18 @@ p {
 
 .btn-package {
     background-color: red;
-    width: 90%;
+    width: 60%;
     color: white;
     margin-bottom: 2%;
+}
+
+.ul {
+    list-style: none;
+}
+
+.ul li:before {
+    content: '✓';
+    color: green;
 }
 
 #button span {
